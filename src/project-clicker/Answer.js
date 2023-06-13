@@ -7,16 +7,13 @@ export class Answer extends Component {
         super();
         this.state = {
             counter: 0,
-            mult: 5
         };
     }
 
     render() {
         return (
             <div className="row">
-                <div>{this.props.num}</div>
-
-
+                <div>You`ve clicked {this.props.num}</div>
             </div>
         )
     }
