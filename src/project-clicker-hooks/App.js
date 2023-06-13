@@ -1,11 +1,10 @@
 //import logo from '../logo.svg';
 import '../App.css';
 import React from 'react';
-import { Clicker } from './Clicker';
-import { Component } from "react";
+import Clicker from './Clicker';
 
-class App extends Component {
-  render(){
+function App() {
+
     return(
       <div>
         <Clicker />
@@ -13,6 +12,5 @@ class App extends Component {
       </div>
     )
   }
-}
 
 export default App;

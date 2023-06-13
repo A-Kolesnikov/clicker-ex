@@ -1,20 +1,12 @@
-import { Component } from 'react';
-import App from './App';
-import { useState } from 'react';
+import React from 'react';
 
-export class Answer extends Component {
-    constructor() {
-        super();
-        
-    }
+export function Answer(props) {
 
-    render() {
-        return (
-            <div>
+    return (
+        <div>
             <div className={"row justify-content-center bottom"}>
-                You`ve clicked {this.props.num}
+                You`ve clicked {props.num}
             </div>
-            </div>
-        )
-    }
+        </div>
+    )
 }
