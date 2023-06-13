@@ -40,9 +40,9 @@
 *{box-sizing: border-box}
 
 [class*=col]{
-  padding: 1rem;
+  padding: 10px;
           background-color: white;
-  margin: 20px;
+  margin: 10px;
           /*text-align: center;
           justify-content: center;*/
 }
