@@ -1,6 +1,4 @@
 import { Component } from 'react';
-import App from './App';
-import { useState } from 'react';
 import { Segment } from './Segment';
 import { Answer } from './Answer';
 
@@ -19,8 +17,8 @@ export class Clicker extends Component {
 
     render() {
         return (
-            <div className={'container flex-column justify-content-center'}>
-                
+            <div className={'container'}>
+                <div className={'flex-column justify-content-center'}>
                     < Segment num1={1} num2={2} kbGetNumber={this.getNumber} />
                     < Segment num1={2} num2={4} kbGetNumber={this.getNumber} />
                     < Segment num1={3} num2={6} kbGetNumber={this.getNumber} />
@@ -28,7 +26,7 @@ export class Clicker extends Component {
                     < Segment num1={5} num2={10} kbGetNumber={this.getNumber} />
                     < Segment num1={6} num2={12} kbGetNumber={this.getNumber} />
                     < Answer num={this.state.number} />
-                
+                </div>
             </div>
         )
     }
